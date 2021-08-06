@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <div class="text-center">
+        <h1>contador</h1>
+        <button id="botonrestar" onclick="subs()" class="btn btn-primary">-1</button>
+        <button id="botonMenosDiez" onclick="subsTen()" class="btn btn-danger">-10</button>
+        <h3 id="quantity">0</h3>
+        <button id="botonsumar" onclick="add()" class="btn btn-secondary">+1</button>
+        <button id="botonMasDiez" onclick="addTen()" class="btn btn-warning">+10</button>
+        <br>
+        <input id="inputSuma" type="text" >        
+        <label for="">Cuanto desea sumar</label>
+        <button onclick="addInput()" class="btn btn-success">Sumar</button>
+        <br>
+        <input id="inputResta" type="text" >        
+        <label for="">Cuanto desea sumar</label>
+        <button onclick="subsInput()" class="btn btn-success">Restar</button>
+    </div>
+</body>
+<script src="./javaescri.js"></script>
+</html>
