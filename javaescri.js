@@ -4,6 +4,7 @@
 const quantityHtml = document.getElementById("quantity")
 const inputSuma = document.getElementById("inputSuma")
 const inputResta = document.getElementById("inputResta")
+const btnReset = document.getElementById("reset")
 
 let quantity = 0;
 quantityHtml.innerHTML = quantity;
@@ -48,6 +49,11 @@ const addInput = () =>{
 const subsInput = () =>{
     quantity = quantity - parseInt(inputResta.value);
     quantityHtml.innerHTML = quantity;
+}
+
+const reset = () =>{
+    quantity = 0
+    quantityHtml.innerHTML = quantity
 }
 
 // btnAdd.addEventListener("click", ()=>{
